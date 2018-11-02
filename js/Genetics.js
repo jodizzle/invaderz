@@ -93,12 +93,4 @@ class Genetics {
 		}
 		this.population = newPopulation;
 	}
-	
-	elitism(){
-		this.createPopulation();
-		let rand = Math.floor(Math.random() * this.population.length);
-		let invader = new Invader(w/4/2 ,Math.random()*-20, this.bestOfGeneration.shape);
-		this.population[rand] = invader;
-	}
-	
 }

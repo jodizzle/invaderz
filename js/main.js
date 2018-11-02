@@ -93,11 +93,7 @@ function update(){
 	}
 	if(allDead){
 		getBestOfGeneration();
-		if(generation%7){
-			invaders.evolve();
-		}else{
-			invaders.elitism();
-		}
+		invaders.evolve();
 		generation++;
 	}
 	if(lives > 4){
